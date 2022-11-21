@@ -1,7 +1,7 @@
 import React from "react";
 
 // Config
-import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from "../config/config";
+import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_URL } from "../config/config";
 
 // Components
 
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
       
       {!searchTerm && state.results[0] ? (
         <TopMovieImage
-          image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
+          image={`${IMAGE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
           title={state.results[0].original_title}
           text={state.results[0].overview}
         />
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
             clickable
             image={
               movie.poster_path
-                ? `${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`
+                ? `${IMAGE_URL}${POSTER_SIZE}${movie.poster_path}`
                 : NoImage
             }
             movieHeight={false}

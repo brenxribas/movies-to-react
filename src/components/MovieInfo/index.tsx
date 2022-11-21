@@ -4,7 +4,7 @@ import React from "react";
 import Thumbnail from "../Thumbnail";
 
 // Config
-import { IMAGE_BASE_URL, POSTER_SIZE } from "../../config/config";
+import { IMAGE_URL, POSTER_SIZE } from "../../config/config";
 
 // Fallback Image
 import NoImage from "../../assets/img/sem-foto.png";
@@ -25,7 +25,7 @@ const MovieInfo: React.FC<Props> = ({ movie }) => (
       <Thumbnail
         image={
           movie.poster_path
-            ? `${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`
+            ? `${IMAGE_URL}${POSTER_SIZE}${movie.poster_path}`
             : NoImage
         }
         movieHeight={true}

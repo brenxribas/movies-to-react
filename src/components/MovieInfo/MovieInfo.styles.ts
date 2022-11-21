@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IMAGE_BASE_URL, BACKDROP_SIZE } from "../../config/config";
+import { IMAGE_URL, BACKDROP_SIZE } from "../../config/config";
 
 // Types
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
 
 export const Wrapper = styled.div<Props>`
   background: ${({ backdrop }) =>
-    backdrop ? `url(${IMAGE_BASE_URL}${BACKDROP_SIZE}${backdrop})` : "#000"};
+    backdrop ? `url(${IMAGE_URL}${BACKDROP_SIZE}${backdrop})` : "#000"};
   background-size: cover;
   background-position: center;
   padding: 40px 20px;
