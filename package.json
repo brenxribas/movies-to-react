@@ -1,6 +1,7 @@
 {
   "name": "movies-to-react",
   "version": "0.1.0",
+  "author": "@brenxribas",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -12,17 +13,14 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-router-dom": "^5.3.2",
     "@types/styled-components": "^5.1.19",
-    "bootstrap": "^5.2.2",
     "history": "^5.2.0",
     "react": "^17.0.2",
-    "react-bootstrap": "^2.6.0",
     "react-dom": "^17.0.2",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.0.0-beta.8",
     "react-scripts": "5.0.0",
     "styled-components": "^5.3.3",
-    "typescript": "^4.5.4",
-    "web-vitals": "^2.1.3"
+    "typescript": "^4.5.4"
   },
   "scripts": {
     "start": "react-scripts start",
