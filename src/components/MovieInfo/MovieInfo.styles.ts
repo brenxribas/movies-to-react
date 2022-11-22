@@ -41,7 +41,7 @@ export const Text = styled.div`
   color: var(--white);
   overflow: hidden;
 
-  .rating-directors {
+  .info {
     display: flex;
     justify-content: flex-start;
     padding: 30px 0px;
@@ -57,11 +57,27 @@ export const Text = styled.div`
     color: var(--black);
     font-weight: 800;
     border-radius: 50%;
+    margin-left: 25px;
+  }
+
+  .time{
+    margin-left: 20px;
+  }
+
+  .runtime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 12px;
+    margin-top: 5px;
+    p {
+      margin: 0;
+      padding: 5px 0px;
+    }
   }
 
   .director {
-    margin: 0 0 0 80px;
+    margin: 0 0 0 30px;
     p {
       margin: 0;
       padding: 5px 0px;

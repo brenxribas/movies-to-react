@@ -34,10 +34,14 @@ const MovieInfo: React.FC<Props> = ({ movie }) => (
       <Text>
         <h1>{movie.title}</h1>
 
-        <div className="rating-directors">
+        <div className="info">
           <div>
             <h3>AVALIAÇÃO</h3>
             <div className="score">{movie.vote_average.toFixed(2)}</div>
+          </div>
+          <div>
+            <h3 className="time">DURAÇÃO</h3>
+            <div className="runtime">{movie.runtime} min</div>
           </div>
           <div className="director">
             <h3>DIRETOR{movie.directors.length > 1 ? "ES" : ""}</h3>
