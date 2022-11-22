@@ -43,7 +43,7 @@ Em seguida, execute o app no no modo de desenvolvimento. Abra http://localhost:3
 
 ## Documentação da API
 
-https://www.themoviedb.org/settings/api
+https://www.themoviedb.org/settings/api<br>
 https://developers.themoviedb.org/3
 
 
